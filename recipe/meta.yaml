@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 443c5c37d1f3a74f09325b87c919db5bbd5745fa9090d5cac56b3021e74949b9
+  sha256: 8ffefd81817a91011b50df82d55c376ddd290a592bd494718fe87b53269c5118
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,7 +42,7 @@ about:
   home: https://www.tiledb.com
   license: MIT
   license_file: LICENSE
-  summary: 'R interface to the TileDB array storage manager'
+  summary: R interface to the TileDB array storage manager
 
   description: |
     TileDB is a highly-parallelized, cloud native array storage engine.
