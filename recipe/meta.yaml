@@ -28,8 +28,10 @@ requirements:
     - tiledb >=1.7.4,<2.0
     - r-rcpp >=0.12.15
     - r-testthat
+    - r-nanotime
   run:
     - r-base
+    - r-nanotime
     - r-rcpp >=0.12.15
 
 test:
