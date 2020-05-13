@@ -25,7 +25,7 @@ requirements:
     - make
   host:
     - r-base
-    - tiledb >=1.7.4
+    - tiledb >=1.7.4,<2.0
     - r-rcpp >=0.12.15
     - r-testthat
   run:
