@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 98d008d5b7d7311505776a9062e3593b7f7c4dc482ad6b5f8eb8b0ae0765917c
+  sha256: d33e90248cbef09077478d8be50ff908f5d7d06457d7dd1d372d0950872f35b8
 
 build:
   number: 0
