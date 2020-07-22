@@ -5,7 +5,7 @@ Home: https://www.tiledb.com
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: R interface to the TileDB array storage manager
 
