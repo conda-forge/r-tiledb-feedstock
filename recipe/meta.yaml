@@ -36,9 +36,9 @@ requirements:
 
 test:
   requires:
-    - r-testthat
+    - r-tinytest
   commands:
-    - Rscript -e 'testthat::test_package("tiledb")'
+    - Rscript -e 'tinytest::test_package("tiledb")'
 
 about:
   home: https://www.tiledb.com
