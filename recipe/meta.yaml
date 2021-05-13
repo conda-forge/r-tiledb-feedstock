@@ -29,10 +29,12 @@ requirements:
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
+    - r-arrow
   run:
     - r-base
     - r-nanotime
     - r-rcpp >=0.12.15
+    - r-arrow
 
 test:
   requires:
