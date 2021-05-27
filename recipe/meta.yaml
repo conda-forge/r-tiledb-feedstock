@@ -25,6 +25,8 @@ requirements:
     - make
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-sys                      # [build_platform != target_platform]
+    - r-nanotime  # [build_platform != target_platform]
+    - r-rcpp >=0.12.15  # [build_platform != target_platform]
   host:
     - r-base
     - tiledb >2.0
@@ -35,7 +37,6 @@ requirements:
   run:
     - r-base
     - r-nanotime
-    - r-rcpp >=0.12.15
     - r-arrow
 
 test:
