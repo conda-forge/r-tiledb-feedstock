@@ -23,6 +23,8 @@ requirements:
     - {{ compiler('cxx') }}
     - pkg-config
     - make
+    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-sys                      # [build_platform != target_platform]
   host:
     - r-base
     - tiledb >2.0
