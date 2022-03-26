@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 98a893d8404be2b244c523ce6eb0abd33f576450787190354cdc7e573b4baa0b
+  sha256: 918c85aa627eb88d6030632e1b597fff670ad77e9b6dfe4a4a1854997788a5f9
 
 build:
   number: 0
@@ -33,15 +33,15 @@ requirements:
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
-    - r-arrow
   run:
     - r-base
     - r-nanotime
-    - r-arrow
 
 test:
   requires:
     - r-tinytest
+    - r-nycflights13
+    - r-palmerpenguins
   commands:
     - Rscript -e 'tinytest::test_package("tiledb")'
 
