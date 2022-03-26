@@ -33,15 +33,15 @@ requirements:
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
-    - r-arrow
   run:
     - r-base
     - r-nanotime
-    - r-arrow
 
 test:
   requires:
     - r-tinytest
+    - r-nycflights13
+    - r-arrow
   commands:
     - Rscript -e 'tinytest::test_package("tiledb")'
 
