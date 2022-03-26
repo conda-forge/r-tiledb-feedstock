@@ -41,7 +41,6 @@ test:
   requires:
     - r-tinytest
     - r-nycflights13
-    - r-arrow
     - r-palmerpenguins
   commands:
     - Rscript -e 'tinytest::test_package("tiledb")'
