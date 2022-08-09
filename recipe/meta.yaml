@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,9 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: cc9ad04b188b4e1c16ea8b603f78dcea95f0ad5a7b803230171d5146cdf7884d
+  sha256: bfd165cea084de567cde1406a6dbdf4e9b6da1706699365a2386cb8938c2bed8
+  patches:
+    - 0001-test_timetravel_extra.patch
 
 build:
   number: 0
@@ -29,14 +31,14 @@ requirements:
     - r-rcpp >=0.12.15  # [build_platform != target_platform]
   host:
     - r-base
-    - tiledb 2.10.*
+    - tiledb 2.11.*
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
   run:
     - r-base
     - r-nanotime
-    - tiledb 2.10.*
+    - tiledb 2.11.*
 
 test:
   requires:
