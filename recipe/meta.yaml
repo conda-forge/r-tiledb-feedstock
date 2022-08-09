@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
   sha256: bfd165cea084de567cde1406a6dbdf4e9b6da1706699365a2386cb8938c2bed8
+  patches:
+    - 0001-test_timetravel_extra.patch
 
 build:
   number: 0
