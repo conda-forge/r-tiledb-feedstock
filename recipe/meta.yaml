@@ -12,7 +12,7 @@ source:
     - 0001-test_timetravel_extra.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
