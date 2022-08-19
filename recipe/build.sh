@@ -12,4 +12,7 @@ if [[ $target_platform  == osx-64 ]]; then
   echo CXX17=$RECIPE_DIR/cxx_wrap.sh >> ~/.R/Makevars
 fi
 
-$R CMD INSTALL --configure-args=--with-tiledb=${CONDA_PREFIX} --install-tests --build . ${R_ARGS}
+## Build a tarball and install from the tarball is the officially blessed way
+## It has also respects the .Rbuildignore file allowing us to fine-tune
+$R CMD build .
+$R CMD INSTALL --configure-args=--with-tiledb=${CONDA_PREFIX} --install-tests --build tiledb_*.tar.gz ${R_ARGS}
