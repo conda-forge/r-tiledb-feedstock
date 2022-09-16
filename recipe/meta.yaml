@@ -10,13 +10,11 @@ source:
   sha256: bfd165cea084de567cde1406a6dbdf4e9b6da1706699365a2386cb8938c2bed8
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
-  ignore_run_exports: # ignore here to avoid overlink warning b/c test require doesn't work
-    - r-testthat
 
 requirements:
   build:
@@ -31,7 +29,6 @@ requirements:
     - r-base
     - tiledb 2.11.*
     - r-rcpp >=0.12.15
-    - r-testthat
     - r-nanotime
   run:
     - r-base
