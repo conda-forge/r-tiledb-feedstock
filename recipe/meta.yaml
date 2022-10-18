@@ -24,11 +24,11 @@ requirements:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-sys                      # [build_platform != target_platform]
     - r-nanotime  # [build_platform != target_platform]
-    - r-rcpp >=0.12.15  # [build_platform != target_platform]
+    - r-rcpp >=1.0.8  # [build_platform != target_platform]
   host:
     - r-base
     - tiledb 2.11.*
-    - r-rcpp >=0.12.15
+    - r-rcpp >=1.0.8
     - r-nanotime
   run:
     - r-base
