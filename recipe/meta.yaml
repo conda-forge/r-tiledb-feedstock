@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.15.0" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: bfd165cea084de567cde1406a6dbdf4e9b6da1706699365a2386cb8938c2bed8
+  sha256: ee10ccd7a7cd0d52c6ad357bef55c824e2783dea647add9c430973d6e9caa541
 
 build:
-  number: 5
+  number: 0
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
@@ -46,7 +46,7 @@ about:
   home: https://www.tiledb.com
   license: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
   summary: R interface to the TileDB array storage manager
 
