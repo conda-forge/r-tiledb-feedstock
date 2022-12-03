@@ -28,11 +28,14 @@ requirements:
     - r-base
     - tiledb 2.12.*
     - r-rcpp >=1.0.8
+    - r-rcppspdlog
     - r-nanotime
+    - r-spdl
   run:
     - r-base
     - r-nanotime
     - tiledb 2.12.*
+    - r-spdl
 
 test:
   requires:
