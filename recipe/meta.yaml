@@ -24,6 +24,7 @@ requirements:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-nanotime  # [build_platform != target_platform]
     - r-rcpp >=1.0.8  # [build_platform != target_platform]
+    - r-rcppspdlog  # [build_platform != target_platform]
   host:
     - r-base
     - tiledb 2.13.*
