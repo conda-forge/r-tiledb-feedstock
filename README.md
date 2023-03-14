@@ -1,11 +1,29 @@
+About r-tiledb-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tiledb-feedstock/blob/main/LICENSE.txt)
+
 About r-tiledb
-==============
+--------------
 
 Home: https://www.tiledb.com
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tiledb-feedstock/blob/main/LICENSE.txt)
+Summary: R interface to the TileDB array storage manager
+
+Development: https://github.com/TileDB-Inc/TileDB-R
+
+Documentation: https://docs.tiledb.com/developer/
+
+TileDB is a highly-parallelized, cloud native array storage engine.
+
+About r-tiledb
+--------------
+
+Home: https://www.tiledb.com
+
+Package license: MIT
 
 Summary: R interface to the TileDB array storage manager
 
