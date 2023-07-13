@@ -12,7 +12,7 @@ source:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
