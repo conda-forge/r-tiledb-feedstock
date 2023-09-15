@@ -29,7 +29,7 @@ requirements:
     - r-rcppspdlog  # [build_platform != target_platform]
   host:
     - r-base
-    - tiledb 2.16.*
+    - tiledb 2.17.*
     - r-rcpp >=1.0.8
     - r-rcppspdlog
     - r-nanotime
@@ -37,7 +37,7 @@ requirements:
   run:
     - r-base
     - r-nanotime
-    - tiledb 2.16.*
+    - tiledb 2.17.*
     - r-spdl
 
 test:
