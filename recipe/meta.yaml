@@ -45,6 +45,7 @@ test:
     - r-tinytest
     - r-nycflights13
     - r-palmerpenguins
+    - r-data.table
   commands:
     - Rscript -e 'tinytest::test_package("tiledb")'
 
