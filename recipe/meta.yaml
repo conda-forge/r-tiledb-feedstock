@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.21.0" %}
+{% set version = "0.21.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 1bb67587a1529b429624f4ec63f020ea1f3cf4936e1af0b1d1262d9cdc002cc9
+  sha256: 3ede0a27b525df73aa22f352a22bfc0f0e862d0b604d7b7885188f9f201fd0e9
   patches:   # [osx and not arm64]
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
 
@@ -27,6 +27,7 @@ requirements:
     - r-nanotime  # [build_platform != target_platform]
     - r-rcpp >=1.0.8  # [build_platform != target_platform]
     - r-rcppspdlog  # [build_platform != target_platform]
+    - r-rcppint64  # [build_platform != target_platform]
   host:
     - r-base
     - tiledb 2.17.*
@@ -34,6 +35,7 @@ requirements:
     - r-rcppspdlog
     - r-nanotime
     - r-spdl
+    - r-rcppint64
   run:
     - r-base
     - r-nanotime
