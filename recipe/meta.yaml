@@ -27,6 +27,7 @@ requirements:
     - r-nanotime  # [build_platform != target_platform]
     - r-rcpp >=1.0.8  # [build_platform != target_platform]
     - r-rcppspdlog  # [build_platform != target_platform]
+    - r-rcppint64  # [build_platform != target_platform]
   host:
     - r-base
     - tiledb 2.17.*
@@ -34,6 +35,7 @@ requirements:
     - r-rcppspdlog
     - r-nanotime
     - r-spdl
+    - r-rcppint64
   run:
     - r-base
     - r-nanotime
