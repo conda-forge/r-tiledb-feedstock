@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.21.1" %}
+{% set version = "0.21.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 3ede0a27b525df73aa22f352a22bfc0f0e862d0b604d7b7885188f9f201fd0e9
+  sha256: e07ec2e7d4990d38acb6e5a5725e11e279da22d0a0bed92348d69b2ff63320f7
   patches:   # [osx and not arm64]
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
 
