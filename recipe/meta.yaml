@@ -12,7 +12,7 @@ source:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
@@ -39,7 +39,6 @@ requirements:
   run:
     - r-base
     - r-nanotime
-    - tiledb 2.19.*
     - r-spdl
 
 test:
