@@ -30,7 +30,7 @@ requirements:
     - r-rcppint64  # [build_platform != target_platform]
   host:
     - r-base
-    - tiledb 2.20.*
+    - tiledb 2.21.*
     - r-rcpp >=1.0.8
     - r-rcppspdlog
     - r-nanotime
