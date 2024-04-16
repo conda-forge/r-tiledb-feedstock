@@ -242,4 +242,5 @@ Feedstock Maintainers
 * [@eddelbuettel](https://github.com/eddelbuettel/)
 * [@ihnorton](https://github.com/ihnorton/)
 * [@jdblischak](https://github.com/jdblischak/)
+* [@johnkerl](https://github.com/johnkerl/)
 
