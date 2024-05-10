@@ -2,6 +2,11 @@ set -x
 set -o xtrace
 
 if [[ $target_platform  == osx-64 ]]; then
+  # https://github.com/TileDB-Inc/TileDB-R/issues/707
+  exit 0
+fi
+
+if [[ $target_platform  == osx-64 ]]; then
   export NN_CXX_ORIG=$CXX
   export NN_CC_ORIG=$CC
   export CXX=$RECIPE_DIR/cxx_wrap.sh
