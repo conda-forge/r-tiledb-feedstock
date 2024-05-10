@@ -1,5 +1,7 @@
 build_platform:
-  linux_aarch64: linux_64
+  # Temp omit for 0.27.0
+  # https://github.com/TileDB-Inc/TileDB-R/issues/707
+  # linux_aarch64: linux_64
   osx_arm64: osx_64
 conda_build:
   pkg_format: '2'
@@ -7,6 +9,8 @@ conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
-provider:
-  linux_aarch64: default
+# Temp omit for 0.27.0
+# https://github.com/TileDB-Inc/TileDB-R/issues/707
+#provider:
+#  linux_aarch64: default
 test: native_and_emulated
