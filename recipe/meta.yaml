@@ -12,7 +12,7 @@ source:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - pkg-config
     - make
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
