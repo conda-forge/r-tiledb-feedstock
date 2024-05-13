@@ -1,6 +1,16 @@
 set -x
 set -o xtrace
 
+echo
+echo
+echo
+echo ================================================================
+env|sort
+echo ================================================================
+echo
+echo
+echo
+
 if [[ $target_platform  == osx-64 ]]; then
   export NN_CXX_ORIG=$CXX
   export NN_CC_ORIG=$CC
