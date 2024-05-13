@@ -9,8 +9,8 @@ source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
   sha256: 0ccf6726274655115ba04378d8aefd0c057867d6725144d9e5dc9522c914cfd0
   patches:
-    - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
-    - 0002-skip-osx-test-to-avoid-spurious-segfault.patch  # [linux and aarch64]
+    - 0001-skip-osx-test-to-avoid-spurious-segfault.patch       # [osx and not arm64]
+    - 0002-skip-linux-aarch64-test-to-avoid-spurious-fail.patch # [linux and aarch64]
 
 build:
   number: 0
