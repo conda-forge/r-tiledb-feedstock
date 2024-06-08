@@ -13,7 +13,7 @@ source:
     - 0002-skip-linux-aarch64-test-to-avoid-spurious-fail.patch  # [linux and aarch64]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
