@@ -1,0 +1,12 @@
+diff --git a/NEWS.md b/NEWS.md
+index 91742a69..07e44b1d 100644
+--- a/NEWS.md
++++ b/NEWS.md
+@@ -6,7 +6,6 @@
+ 
+ * Three internal and unexported helper functions now document more clearly how they can be called explicitly. (#709)
+ 
+-* Reading and writing of text- and binary files supported by a VFS backend is now supported. (#710)
+ 
+ ## Build and Test Systems
+ 

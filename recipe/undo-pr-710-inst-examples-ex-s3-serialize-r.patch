@@ -1,0 +1,14 @@
+diff --git a/inst/examples/ex_s3_serialize.R b/inst/examples/ex_s3_serialize.R
+deleted file mode 100644
+index 3cdcbd4c..00000000
+--- a/inst/examples/ex_s3_serialize.R
++++ /dev/null
+@@ -1,8 +0,0 @@
+-
+-library(tiledb)
+-
+-uri <- "s3://tiledb-dirk/serializeDemo"
+-tiledb_vfs_serialize(palmerpenguins::penguins, uri)
+-
+-newpp <- tiledb_vfs_unserialize(uri)
+-head(newpp)
