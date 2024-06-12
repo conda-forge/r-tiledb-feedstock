@@ -1,0 +1,12 @@
+diff --git a/NAMESPACE b/NAMESPACE
+index b242579e..d1c57e61 100644
+--- a/NAMESPACE
++++ b/NAMESPACE
+@@ -306,7 +306,6 @@ export(tiledb_vfs_unserialize)
+ export(tiledb_vfs_write)
+ export(toMatrix)
+ export(toSparseMatrix)
+-export(vfs_file)
+ exportClasses(tiledb_array)
+ exportClasses(tiledb_array_schema)
+ exportClasses(tiledb_array_schema_evolution)

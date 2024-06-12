@@ -1,0 +1,14 @@
+diff --git a/inst/examples/ex_s3_connection.R b/inst/examples/ex_s3_connection.R
+deleted file mode 100644
+index b84e039a..00000000
+--- a/inst/examples/ex_s3_connection.R
++++ /dev/null
+@@ -1,8 +0,0 @@
+-
+-library(tiledb)
+-
+-uri <- "s3://tiledb-dirk/tempfolder/penguins.csv"
+-pp <- read.csv(vfs_file(uri))
+-summary(pp)
+-
+-## write.csv also works via vfs_file(...)
