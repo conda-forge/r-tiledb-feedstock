@@ -11,26 +11,6 @@ source:
   patches:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
     - 0002-as-posix-ct-for-4.2.patch
-    # Short-term patches to undo PR 710 (VFS-based read and write connections)
-    # because the new libconnection.so broke the osx-64 builds
-    #
-    # https://github.com/TileDB-Inc/TileDB-R/pull/710
-    # https://github.com/TileDB-Inc/TileDB-R/commit/6498d75c348c5a0649620a9d760ee0cf578c7101
-    - undo-pr-710-cleanup.patch  # [osx and not arm64]
-    - undo-pr-710-inst-examples-ex-s3-connection-r.patch  # [osx and not arm64]
-    - undo-pr-710-inst-examples-ex-s3-serialize-r.patch  # [osx and not arm64]
-    - undo-pr-710-inst-tinytest-test-vfs-file-r.patch  # [osx and not arm64]
-    - undo-pr-710-man-vfs-file-rd.patch  # [osx and not arm64]
-    - undo-pr-710-namespace.patch  # [osx and not arm64]
-    - undo-pr-710-news-md.patch  # [osx and not arm64]
-    - undo-pr-710-r-init-r.patch  # [osx and not arm64]
-    - undo-pr-710-r-rcppexports-r.patch  # [osx and not arm64]
-    - undo-pr-710-src-connection-connection-c.patch  # [osx and not arm64]
-    - undo-pr-710-src-connection-connection-h.patch  # [osx and not arm64]
-    - undo-pr-710-src-makevars-in.patch  # [osx and not arm64]
-    - undo-pr-710-src-makevars-win.patch  # [osx and not arm64]
-    - undo-pr-710-src-rcppexports-cpp.patch  # [osx and not arm64]
-    - undo-pr-710-src-virtualfile-cpp.patch  # [osx and not arm64]
 
 build:
   number: 0
