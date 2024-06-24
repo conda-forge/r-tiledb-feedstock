@@ -8,9 +8,8 @@ package:
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
   sha256: 7b89fc5b3f5a72b754f7c127d4201df0154d84e915f5725e6b90e62b00f85ec6
-  patches:
+  patches:  # [osx and not arm64]
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
-    - 0002-as-posix-ct-for-4.2.patch
 
 build:
   number: 0
