@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.28.2" %}
+{% set version = "0.29.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,11 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 8e1463303703aa8788f1d24591065ec153ed9c40e8f400d9c2051c4c4ea51737
+  sha256: 8d31385629f782d106ff9c3c300ea404233228ab98f5c19394608321dd499405
   patches:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
     - 0002-skip-aarch64-test-failure.patch  # [aarch64]
+    - 0003-skip-osx-test-to-avoid-spurious-illegal-instruction.patch  # [osx and not arm64]
 
 build:
   number: 0
@@ -31,20 +32,26 @@ requirements:
     - r-rcppspdlog  # [build_platform != target_platform]
     - r-rcppint64  # [build_platform != target_platform]
     - r-nanoarrow  # [build_platform != target_platform]
+    # Helps resolve Illegal instruction in tests
+    - libcxx <18          # [osx and x86_64]
   host:
     - r-base
-    - tiledb 2.24.*
+    - tiledb 2.25.*
     - r-rcpp >=1.0.8
     - r-rcppspdlog
     - r-nanotime
     - r-spdl
     - r-rcppint64
     - r-nanoarrow
+    # Helps resolve Illegal instruction in tests
+    - libcxx <18          # [osx and x86_64]
   run:
     - r-base
     - r-nanotime
     - r-spdl
     - r-nanoarrow
+    # Helps resolve Illegal instruction in tests
+    - libcxx <18          # [osx and x86_64]
 
 test:
   requires:
