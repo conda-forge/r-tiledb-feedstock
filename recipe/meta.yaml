@@ -12,6 +12,7 @@ source:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
     - 0002-skip-aarch64-test-failure.patch  # [aarch64]
     - 0003-skip-osx-test-to-avoid-spurious-illegal-instruction.patch  # [osx and not arm64]
+    - 0004-r44-so.patch  # [osx and not arm64]
 
 build:
   number: 1
