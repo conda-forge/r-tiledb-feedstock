@@ -1,0 +1,21 @@
+diff --git a/configure b/configure
+index ab936c1b..d7a7f218 100755
+--- a/configure
++++ b/configure
+@@ -6058,9 +6058,13 @@ printf %s "checking for Darwin use minimum version override... " >&6; }
+     CXX17_MACOS="-mmacosx-version-min=11"
+     { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: ${CXX17_MACOS}" >&5
+ printf "%s\n" "${CXX17_MACOS}" >&6; }
+-    ## Obscure but important override: we may have gotten .dylib, but we prefer .so -- unless it is Conda
+-    if test x"${CONDA_BUILD}" != x"1"; then
+-       DYLIB_EXT=".so"
++    ## Obscure but important override: we may have gotten .dylib, but we prefer .so
++    ## -- unless it is Conda R 4.3 (Conda R 4.4 returned to using .so)
++    DYLIB_EXT=".so"
++    if test x"${CONDA_BUILD}" == x"1"; then
++       if Rscript --version | grep -q 4.3; then
++          DYLIB_EXT=".dylib"
++       fi
+     fi
+ fi
+ 

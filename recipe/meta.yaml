@@ -12,10 +12,12 @@ source:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
     - 0002-skip-aarch64-test-failure.patch  # [aarch64]
     - 0003-skip-osx-test-to-avoid-spurious-illegal-instruction.patch  # [osx and not arm64]
+    - 0004-r44-so.patch  # [osx and not arm64]
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
+  # Checking windows to see if it passes. Uncomment the line if it fails.
+  # skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
