@@ -38,7 +38,7 @@ requirements:
     - libcxx <18          # [osx and x86_64]
   host:
     - r-base
-    - tiledb 2.25.*
+    - tiledb 2.26.*
     - r-rcpp >=1.0.8
     - r-rcppspdlog
     - r-nanotime
