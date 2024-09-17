@@ -38,7 +38,7 @@ requirements:
     - libcxx <18          # [osx and x86_64]
   host:
     - r-base
-    - tiledb 2.26.*
+    - tiledb 2.26.0
     - r-rcpp >=1.0.8
     - r-rcppspdlog
     - r-nanotime
@@ -61,6 +61,7 @@ test:
     - r-nycflights13
     - r-palmerpenguins
     - r-data.table
+    - tiledb 2.26.0
   commands:
     - Rscript -e 'tinytest::test_package("tiledb")'
 
