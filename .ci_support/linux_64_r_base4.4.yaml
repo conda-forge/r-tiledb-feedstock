@@ -22,8 +22,6 @@ r_base:
 - '4.4'
 target_platform:
 - linux-64
-tiledb:
-- '2.26'
 zip_keys:
 - - c_stdlib_version
   - cdt_name

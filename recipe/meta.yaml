@@ -15,7 +15,7 @@ source:
     - 0004-r44-so.patch  # [osx and not arm64]
 
 build:
-  number: 0
+  number: 1
   # Checking windows to see if it passes. Uncomment the line if it fails.
   # skip: true  # [win]
   rpaths:
@@ -34,8 +34,6 @@ requirements:
     - r-rcppspdlog  # [build_platform != target_platform]
     - r-rcppint64  # [build_platform != target_platform]
     - r-nanoarrow  # [build_platform != target_platform]
-    # Helps resolve Illegal instruction in tests
-    - libcxx <18          # [osx and x86_64]
   host:
     - r-base
     - tiledb 2.26.*
@@ -45,15 +43,11 @@ requirements:
     - r-spdl
     - r-rcppint64
     - r-nanoarrow
-    # Helps resolve Illegal instruction in tests
-    - libcxx <18          # [osx and x86_64]
   run:
     - r-base
     - r-nanotime
     - r-spdl
     - r-nanoarrow
-    # Helps resolve Illegal instruction in tests
-    - libcxx <18          # [osx and x86_64]
 
 test:
   requires:

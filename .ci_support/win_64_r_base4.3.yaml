@@ -14,5 +14,3 @@ r_base:
 - '4.3'
 target_platform:
 - win-64
-tiledb:
-- '2.26'
