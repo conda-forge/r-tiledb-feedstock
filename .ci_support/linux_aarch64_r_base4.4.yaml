@@ -22,3 +22,5 @@ r_base:
 - '4.4'
 target_platform:
 - linux-aarch64
+tiledb:
+- '2.28'
