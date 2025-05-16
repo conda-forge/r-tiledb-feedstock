@@ -25,4 +25,4 @@ r_base:
 target_platform:
 - osx-arm64
 tiledb:
-- '2.27'
+- '2.28'
