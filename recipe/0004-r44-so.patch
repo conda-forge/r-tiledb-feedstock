@@ -13,9 +13,9 @@ index ab936c1b..d7a7f218 100755
 +    ## -- unless it is Conda R 4.3 (Conda R 4.4 returned to using .so)
 +    DYLIB_EXT=".so"
 +    if test x"${CONDA_BUILD}" == x"1"; then
-+       if Rscript --version | grep -q 4.3; then
++       if Rscript --version | grep -Fq 4.3.; then
 +          DYLIB_EXT=".dylib"
 +       fi
      fi
  fi
- 
+
