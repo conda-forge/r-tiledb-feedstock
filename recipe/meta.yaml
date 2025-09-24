@@ -16,9 +16,6 @@ source:
 
 build:
   number: 1
-  # Skip osx-64 r-base 4.4 build. It started failing between R 4.4.2 and 4.4.3
-  # for unknown reasons
-  skip: true  # [(osx and not arm64) and r_base == "4.4"]
   # Checking windows to see if it passes. Uncomment the line if it fails.
   # skip: true  # [win]
   rpaths:

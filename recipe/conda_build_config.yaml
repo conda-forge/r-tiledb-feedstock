@@ -3,9 +3,5 @@ c_stdlib_version:              # [osx and x86_64]
 r_base:
   # Still need an R 4.3 build for linux-64
   - 4.3    # [linux and x86_64]
-  # Until we can fix the problem with R 4.4.3 on osx-64,
-  # build with R 4.4.2
-  # https://github.com/conda-forge/r-tiledb-feedstock/pull/97
-  - 4.4.2  # [osx and x86_64]
-  - 4.4    # [not (osx and x86_64)]
+  - 4.4
   - 4.5
