@@ -265,6 +265,3 @@ Feedstock Maintainers
 * [@johnkerl](https://github.com/johnkerl/)
 * [@mojaveazure](https://github.com/mojaveazure/)
 
-
-<!-- dummy commit to enable rerendering -->
-
