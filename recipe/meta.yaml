@@ -36,7 +36,7 @@ requirements:
     - r-nanoarrow  # [build_platform != target_platform]
   host:
     - r-base
-    - tiledb 2.29.*
+    - tiledb 2.30.*
     - r-rcpp >=1.0.8
     - r-rcppspdlog
     - r-nanotime
