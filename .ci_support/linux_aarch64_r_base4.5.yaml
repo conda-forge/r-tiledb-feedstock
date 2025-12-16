@@ -21,4 +21,4 @@ r_base:
 target_platform:
 - linux-aarch64
 tiledb:
-- '2.29'
+- '2.30'

@@ -15,4 +15,4 @@ r_base:
 target_platform:
 - win-64
 tiledb:
-- '2.29'
+- '2.30'
