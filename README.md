@@ -259,9 +259,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@Shelnutt2](https://github.com/Shelnutt2/)
-* [@ihnorton](https://github.com/ihnorton/)
 * [@jdblischak](https://github.com/jdblischak/)
-* [@johnkerl](https://github.com/johnkerl/)
 * [@mojaveazure](https://github.com/mojaveazure/)
 
